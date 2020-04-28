@@ -262,7 +262,7 @@ PLAYER ICONS KEYFRAMES
     }
 
     100% {
-        transform: translateY(700px);
+        transform: translateY(800px);
         z-index: 1;
     }
 }
