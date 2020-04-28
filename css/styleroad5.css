@@ -1,0 +1,455 @@
+/* ----------------------------------
+ROOT FILES
+------------------------------------- */
+
+:root {
+    --road-color: grey;
+    --line-color: white;
+}
+
+/* -----------------------------------
+UTILITY CLASSES 
+-------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+   
+}
+
+
+/* --------------------------------------
+ROAD DISPLAY SETUP - PAGE 2
+---------------------------------------- */
+
+.road-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+.road-display .road1 {
+    height: 100vh;
+    background: var(--road-color);
+    position: relative;
+    z-index:1;
+}
+
+.road-display .road2 {
+    height: 100vh;
+    width: 25vw;
+    background: var(--road-color);
+    position: relative;
+    z-index: 1;
+    
+}
+
+.road-display .road3 {
+    height: 100vh;
+    width: 25vw;
+    background: var(--road-color);
+    position: relative;
+    z-index: 1;
+    
+}
+
+.road-display .road4 {
+    height: 100vh;
+    width: 25vw;
+    background: var(--road-color);
+    position: relative;
+    
+}
+
+.lines {
+
+height: 100vh;
+border-left: 5px dotted var(--line-color);
+position: absolute;
+left: 50%;
+
+}
+
+.inner-lines {
+    height: 100vh;
+    border: 5px dashed var(--line-color);
+    position: absolute;
+    left: 160px;
+}
+
+/* -------------------------------------
+FIRST PAGE SPONSORS DISPLAY
+---------------------------------------- */
+
+.image1 {
+    height: 50px;
+    width: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+}
+
+.image2 {
+    height: 50px;
+    width: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 180px;
+}
+
+
+.image3 {
+    height: 50px;
+    width: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 330px;
+}
+
+.image4 {
+    height: 50px;
+    width: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+}
+
+.image5 {
+    height: 50px;
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.image6 {
+    height: 50px;
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 180px;
+    right: 25px;
+}
+
+
+.image7 {
+    height: 50px;
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 330px;
+    right: 25px;
+}
+
+.image8 {
+    height: 50px;
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+    right: 25px;
+}
+
+
+
+/* ------------------------------------
+DRIVER ICONS
+--------------------------------------- */
+
+.mario-kart-move {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    animation-name: startracemario;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    z-index:1;
+    
+
+}
+
+
+
+/* ----------------------------------------------
+POWER UPS 
+------------------------------------------------ */
+.mario-kart-winner {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 26px;
+    left: 200px;
+    animation-name: mariowinner;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+    
+
+}
+
+.lakitu-cloud-power {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -5px; 
+    left: 550px;
+    animation-name: shrink;
+    animation-duration: 13s;
+    animation-fill-mode: forwards;
+    z-index:1;
+
+}
+
+.princess-peach-power {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -10px; 
+    right: 375px;
+    animation-name: shrinkpeach;
+    animation-duration: 8.5s;
+    animation-fill-mode: forwards;
+    z-index:1;
+
+}
+
+.finish {
+    position: absolute;
+    left: 230px;
+    bottom: 40px;
+    z-index:1;
+    height: 50px;
+    width: 50px;
+}
+
+.clapping {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    bottom: 70px;
+    left: 410px;
+    animation-name: clapping;
+    animation-delay: 5.5s;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+/* -----------------------------------------------
+BUTTON 
+------------------------------------------------- */
+
+.btn {
+
+    padding: 15px;
+    background: rgb(255, 30, 0);
+    position: absolute; 
+    bottom: 2%;
+    left: 42%;
+    text-transform: uppercase;
+    color: white;
+    animation-name: btn;
+    animation-delay: 2.8s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    z-index: 0;
+    text-decoration: none;
+    
+}
+
+
+.btn:hover {
+transform: scale(1.2);
+}
+
+/* -----------------------------------------------
+PLAYER ICONS KEYFRAMES 
+------------------------------------------------ */
+/* STARTING RACE */
+
+
+@keyframes startracemario {
+
+60%    {
+    transform: translateY(490px);
+    z-index:1;
+}
+
+82% {
+    transform: translateY(490px);
+    z-index: 0;
+}
+
+90% {
+    transform: translateY(491px);
+    z-index: 0;
+}
+
+95% {
+    transform: translateY(491px;);
+    z-index: 0;
+}
+
+100% {
+    transform: translateY(490px);
+    z-index: 0;
+    
+}
+
+    
+}
+
+@keyframes mariowinner {
+  to {
+
+    transform: translateY(-250px) translateX(400px) scale(5) rotate(360deg);
+        z-index: 1;
+  }
+  
+}
+
+
+
+
+
+/* BTN */
+
+@keyframes btn {
+
+
+
+25% {
+    z-index: 1;
+    background-color: rgb(255, 0, 76);
+    transform: scale(0.5);
+
+
+}
+
+50% {
+
+    z-index: 1;
+    background-color: rgb(128, 9, 0);
+    transform: scale(1.5);
+}
+
+75% {
+
+    z-index: 1;
+    background-color: rgb(255, 17, 0);
+    transform: scale(0.5);
+
+}
+
+
+100% {
+    z-index: 1;
+    background-color: rgb(255, 0, 0);
+    
+}
+
+}
+
+/* POWER UPS CHARACTERS */
+
+@keyframes shrink {
+    0% {
+        
+        transform: translateY(0px) scale(0.4);
+        z-index:1
+        
+    }
+
+    10% {
+        transform: translateY(0px) scale(0.4);
+        z-index:1
+    }
+
+    30% {
+        transform: translateY(20px) scale(0.4);
+        z-index:1
+    }
+
+    50% {
+        transform: translateY(60px) scale(0.4);
+        z-index:0
+    }
+
+    70% {
+        transform: translateY(90px) scale(0.4);
+        z-index:0
+        
+    }
+
+    80% {
+        transform: translateY(100px) scale(0.4);
+        z-index:0
+        
+    }
+
+    100% {
+        transform: translateY(300px) scale(0.4);
+        z-index:0
+        
+    }
+}
+
+@keyframes shrinkpeach {
+    0% {
+        
+        transform: translateY(0px) scale(0.4);
+        z-index:1
+        
+    }
+
+    10% {
+        transform: translateY(0px) scale(0.4);
+        z-index:1
+    }
+
+    30% {
+        transform: translateY(20px) scale(0.4);
+        z-index:1
+    }
+
+    50% {
+        transform: translateY(60px) scale(0.4);
+        z-index:1
+    }
+
+    70% {
+        transform: translateY(90px) scale(0.4);
+        z-index:0
+        
+    }
+
+    80% {
+        transform: translateY(150px) scale(0.4);
+        z-index:0
+        
+    }
+
+    100% {
+        transform: translateY(300px) scale(0.4);
+        z-index:0
+        
+    }
+}
+
+
+@keyframes clapping {
+    to {
+        z-index:1;
+    }
+}
+
+       

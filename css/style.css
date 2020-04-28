@@ -1,0 +1,626 @@
+/* ----------------------------------
+ROOT FILES
+------------------------------------- */
+
+:root {
+    --road-color: grey;
+    --line-color: white;
+}
+
+/* -----------------------------------
+UTILITY CLASSES 
+-------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+   
+}
+
+.btn {
+
+    padding: 20px;
+    background: red;
+    position: absolute; 
+    bottom: 2%;
+    left: 42%;
+    text-transform: uppercase;
+    color: white;
+    animation-name: btn;
+    animation-delay: 34s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+    
+    
+}
+
+.btn:hover {
+transform: scale(1.2);
+}
+
+/* ---------------------------------------
+MAIN TEXT HEADING - TITLES, PLAYER NAMES AND COUNTDOWN
+----------------------------------------- */
+
+.mario-racing {
+    position: absolute;
+    z-index: 1;
+    top: 3px;
+    left: 420px;
+    border: 4px solid black;
+    color: white;
+    background-color: rgb(226, 43, 43);
+    animation-name: move;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    
+}
+
+h2 {
+    position: absolute;
+    z-index: 1;
+    top: 290px;
+    font-family: 'Bangers', cursive;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 0.2em;
+    left: -1200px;
+    animation-name: movemiddle;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+.mario-heading {
+    position: absolute;
+    transform: translateY(2000px);
+    left: 530px;
+    animation-name: moveup;
+    animation-duration: 6s;
+    color: red;
+    font-size: 70px;
+    animation-delay: 6s;
+    
+
+}
+
+.cloud-heading {
+    position: absolute;
+    transform: translateY(2000px);
+    left: 390px;
+    animation-name: moveup1;
+    animation-duration: 5.5s;
+    color: rgb(0, 153, 255);
+    font-size: 70px;
+    animation-delay: 11s;
+}
+
+.princess-heading {
+    position: absolute;
+    transform: translateY(2000px);
+    left: 350px;
+    animation-name: moveup2;
+    animation-duration: 4.5s;
+    font-size: 70px;
+    animation-delay: 16s;
+    color: rgb(126, 5, 163);
+
+}
+
+/* COUNTDOWN */
+
+.three {
+    animation-name: one;
+    animation-duration: 3s;
+    animation-delay: 20s;
+    font-size: 100px;
+    position: absolute; 
+    left: 600px;
+    top: 400px;
+    
+}
+
+
+.two {
+    animation-name: two;
+    animation-duration: 2s;
+    animation-delay: 22s;
+    font-size: 100px;
+    position: absolute; 
+    left: 600px;
+    top: 400px;
+    
+}
+
+
+.one {
+    animation-name: three;
+    animation-duration: 2s;
+    animation-delay: 23s;
+    font-size: 100px;
+    position: absolute; 
+    left: 600px;
+    top: 400px;
+    
+}
+
+.go {
+    animation-name: go;
+    animation-duration: 1s;
+    animation-delay: 25s;
+    font-size: 100px;
+    position: absolute; 
+    left: 600px;
+    top: 400px;
+    
+}
+
+
+
+/* ------------------------------------
+DRIVER ICONS
+--------------------------------------- */
+
+.mario-kart {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    z-index: 1;
+    animation-name: spin1;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    
+
+}
+
+.mario-kart-move {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    animation-name: startrace;
+    animation-duration: 8s;
+    animation-delay: 26s;
+
+}
+
+.lakitu-cloud {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: 550px;
+    z-index: 1;
+    animation-name: spin1;
+    animation-duration: 3s;
+    animation-delay: 13s;
+    animation-fill-mode: forwards;
+   
+
+}
+
+.lakitu-cloud-move {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: 550px;
+    animation-name: startrace;
+    animation-duration: 7s;
+    animation-delay: 26.5s
+
+}
+
+.princess-peach {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: 890px;
+    z-index: 1;
+    animation-name: spin1;
+    animation-duration: 3s;
+    animation-delay: 17s;
+    animation-fill-mode: forwards;
+    
+}
+
+.princess-peach-move {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: 890px;
+    animation-name: startrace;
+    animation-duration: 9s;
+    animation-delay: 26s
+}
+
+
+
+/* -------------------------------------
+FIRST PAGE SPONSORS DISPLAY
+---------------------------------------- */
+
+.image1 {
+    height: 50px;
+    width: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+}
+
+.image2 {
+    height: 50px;
+    width: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 180px;
+}
+
+
+.image3 {
+    height: 50px;
+    width: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 330px;
+}
+
+.image4 {
+    height: 50px;
+    width: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+}
+
+.image5 {
+    height: 50px;
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.image6 {
+    height: 50px;
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 180px;
+    right: 25px;
+}
+
+
+.image7 {
+    height: 50px;
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 330px;
+    right: 25px;
+}
+
+.image8 {
+    height: 50px;
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+    right: 25px;
+}
+
+
+
+
+/* --------------------------------------
+ROAD DISPLAY SETUP - PAGE 1 
+---------------------------------------- */
+
+.road-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+.road-display .road1 {
+    height: 100vh;
+    background: var(--road-color);
+    position: relative;
+}
+
+.road-display .road2 {
+    height: 100vh;
+    width: 25vw;
+    background: var(--road-color);
+    position: relative;
+    
+}
+
+.road-display .road3 {
+    height: 100vh;
+    width: 25vw;
+    background: var(--road-color);
+    position: relative;
+    
+}
+
+.road-display .road4 {
+    height: 100vh;
+    width: 25vw;
+    background: var(--road-color);
+    position: relative;
+    
+}
+
+.lines {
+
+height: 100vh;
+border-left: 5px dotted var(--line-color);
+position: absolute;
+left: 50%;
+
+}
+
+.inner-lines {
+    height: 100vh;
+    border: 5px dashed var(--line-color);
+    position: absolute;
+    left: 160px;
+}
+
+
+/* ---------------------------------------
+KEYFRAMES
+----------------------------------------- */
+
+/* ---------------------------------------
+HEADINGS ANIMATIONS - TITLE AND MEET PLAYERS
+------------------------------------------ */
+
+@keyframes move {
+    to {
+    left: 420px;
+    top: 1000px;
+    }
+}
+
+@keyframes movemiddle {
+    20% {
+        left: 100px;
+        top: 400px;
+        color: red;
+    }
+
+    40% {
+        left: 300px;
+        top: 400px;
+        color: blue;
+    }
+
+    60% {
+        left: 500px;
+        top: 400px;
+        color: green;
+
+    }
+
+    80% {
+
+        left: 7000px;
+        top: 400px;
+        color: gold;
+
+    }
+
+    100% {
+
+        right: 1px;
+        top: 400px;
+    }
+}
+
+
+
+/* -----------------------------------------
+PLAYER NAME ANIMATIONS 
+----------------------------------------- */
+
+@keyframes moveup {
+
+    35% {
+        z-index: 1;
+        transform: translateY(240px);
+        
+    }
+
+
+    100% {
+        z-index: 1;
+        color: rgb(255, 0, 0);
+        transform: translateY(240px) rotate(360deg) scale(2.75);
+    }
+
+
+
+}
+
+@keyframes moveup1 {
+
+    35% {
+        z-index: 1;
+        transform: translateY(240px);
+        
+    }
+
+
+    100% {
+        z-index: 1;
+        color: rgb(0, 119, 255);
+        transform: translateY(240px) rotate(360deg) scale(1.8);
+    }
+
+
+}
+
+@keyframes moveup2 {
+
+    35% {
+        z-index: 1;
+        transform: translateY(240px);
+        
+    }
+
+
+    100% {
+        z-index: 1;
+        color: rgb(126, 5, 163);
+        transform: translateY(240px) rotate(360deg) scale(1.4);
+    }
+
+}
+
+/* ----------------------------
+PLAYER ICON ANIMATIONS 
+------------------------------- */
+
+@keyframes spin1 {
+    to {
+        transform: rotate(360deg) scale(2.4);
+        
+    }
+
+}
+
+
+/* ------------------------------
+COUNTDOWN
+---------------------------------- */
+
+@keyframes one {
+    100% {
+        color: rgb(217, 255, 0);
+        top: 300px;
+        left: 600px;
+        z-index: 1;
+        transform: scale(3);
+    }
+}
+
+@keyframes two {
+    100% {
+        color: rgb(0, 47, 255);
+        top: 300px;
+        left: 600px;
+        z-index: 1;
+        transform: scale(3);
+    }
+}
+
+@keyframes three {
+    100% {
+        color: rgb(255, 0, 0);
+        top: 300px;
+        left: 600px;
+        z-index: 1;
+        transform: scale(3);
+    }
+}
+
+@keyframes go {
+    100% {
+        color: rgb(17, 238, 54);
+        top: 300px;
+        left: 600px;
+        z-index: 1;
+        transform: scale(3);
+    }
+}
+
+
+/* STARTING RACE */
+
+@keyframes startrace {
+
+
+    5% {
+        transform: translateY(40px);
+        z-index: 1;
+    }
+
+    10% {
+        transform: translateY(100px);
+        z-index: 1
+    }
+
+    30% {
+        transform: translateY(150px);
+        z-index: 1;
+    }
+
+    50% {
+        transform: translateY(300px);
+        z-index: 1;
+    }
+
+    75% {
+        transform: translateY(375px);
+        z-index: 1;
+    }
+
+    85% {
+        transform: translateY(440px);
+        z-index:1;
+    }
+
+    100% {
+        transform: translateY(600px);
+        z-index: 1;
+    }
+}
+
+/* BTN */
+
+@keyframes btn {
+25% {
+    z-index: 1;
+    background-color: blue;
+
+
+}
+
+50% {
+
+    z-index: 1;
+    background-color: green;
+}
+
+75% {
+
+    z-index: 1;
+    background-color: gold;
+
+}
+
+
+100% {
+    z-index: 1;
+    background-color: red;
+}
+
+}
